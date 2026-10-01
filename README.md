@@ -24,6 +24,12 @@ sed -i '' 's/\[SUPPORT EMAIL\]/you@yourdomain.com/g' *.html
 
 Then commit and push. Vercel deploys `main` automatically.
 
+Vercel is connected to `akselolsenbusiness-eng/nudge-site`. On the free
+plan it only deploys commits authored by that GitHub account, so this
+repository's git identity is set to it (`git config user.name` /
+`user.email` in this clone). A commit under another author is blocked
+with a Pro-plan notice, not an error.
+
 ## Editing
 
 Edit the HTML directly. Keep the effective date at the top of the privacy
